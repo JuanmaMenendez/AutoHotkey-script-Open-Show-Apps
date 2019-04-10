@@ -77,21 +77,20 @@ OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)
 */
 
 
-; F3 - Open||Show Everything
-F3:: OpenOrShowAppBasedOnExeName("Everything.exe", "C:\Program Files\Everything\Everything.exe")
+; F4 - Open||Show  "YouTube as Chrome App"
+F4:: OpenOrShowAppBasedOnWindowTitle("YouTube", "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe --app=https://www.youtube.com/")
 
 
-; F6 - Open||Show Station
-F6:: OpenOrShowAppBasedOnExeName("Station.exe", "C:\Users\Juanma\AppData\Local\browserX\Station.exe")	
-		
+; F6 - Open||Show "File Explorer"
+F6:: OpenOrShowAppBasedOnExeName("explorer.exe", "C:\Windows\explorer.exe")
 
-; F7 - Open||Show Clover
-F7:: OpenOrShowAppBasedOnExeName("Clover.exe", "C:\Program Files (x86)\Clover\Clover.exe")
 
-	
-; F8 - Open||Show  Trello chrome shortcut
-F8:: OpenOrShowAppBasedOnWindowTitle("Trello", "C:\Program Files (x86)\Google\Chrome\Application\chrome_proxy.exe  --profile-directory=Default --app-id=dpmjamchlbolhdobgpgiiflcmadekkfh")
+; F7 - Open||Show "SnippingTool"
+F7:: OpenOrShowAppBasedOnExeName("SnippingTool.exe", "C:\Windows\System32\SnippingTool.exe")			
 
 	
+; F8 - Open||Show  "Gmail as Chrome App"
+F8:: OpenOrShowAppBasedOnWindowTitle("Gmail", "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/mail/")
+
 
     
