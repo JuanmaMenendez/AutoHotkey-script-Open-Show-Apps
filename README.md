@@ -1,9 +1,9 @@
 # AutoHotkey script to Open or Show Apps
 
 
-This [AutoHotkey](https://www.autohotkey.com/) script is to Open or Show (if it is already opened) the desires Apps using the configured shortcuts key (hotkeys) you want.
+This [AutoHotkey](https://www.autohotkey.com/) script is to Open or Show (if it is already opened) the desired Apps using the configured shortcuts key (hotkeys) you want.
 
-There are two **utility functions** for this porpouse: 
+There are two **utility functions** for this purpose: 
 
 **a)** `OpenOrShowAppBasedOnExeName(AppAddress)` //Useful for regular Window Apps
 
