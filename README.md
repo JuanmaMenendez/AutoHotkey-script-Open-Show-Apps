@@ -20,11 +20,11 @@ There are two **utility functions** for this porpouse:
 
 ## Installation Steps
 
-1- Download and install the AutoHotkey App [here.](https://autohotkey.com/download/ahk-install.exe)
+1- Download and install the AutoHotkey App [here](https://autohotkey.com/download/ahk-install.exe)
 
-2- Download the file ["AutoHotkey-script-Open-Show-Apps.ahk"](https://raw.githubusercontent.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/master/AutoHotkey-script-Open-Show-Apps.ahk) and remove the .txt extention
+2- Download the script file [here](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/releases/latest/download/Open-Show-Apps.ahk)
 
-3- Edit the file (Notepad works) and create your shortcuts setting your [keys](https://autohotkey.com/docs/KeyList.htm) and using the above utility functions
+3- Edit the script (Notepad works) and create your shortcuts setting your [keys](https://autohotkey.com/docs/KeyList.htm) and using the above utility functions
 
 4- Execute the script (Double click on it)
 
