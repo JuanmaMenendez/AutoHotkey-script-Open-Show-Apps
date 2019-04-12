@@ -1,7 +1,7 @@
 # AutoHotkey script to Open or Show Apps
 
 
-This [AutoHotkey](https://www.autohotkey.com/) script is to Open or Show (if it is already opened) the desired Apps using the configured shortcuts key (hotkeys) you want.
+This [AutoHotkey](https://www.autohotkey.com/) script is to Open, Restore or Minimize (if it is already opened) the desired Window or Chrome Apps, using the shortcuts key (hotkeys) that you want to set.
 
 There are two **utility functions** for this purpose: 
 
@@ -24,7 +24,9 @@ There are two **utility functions** for this purpose:
 
 2- Download the script file [here](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/releases/latest/download/Open-Show-Apps.ahk)
 
-3- Edit the script (Notepad works) and create your shortcuts setting your [keys](https://autohotkey.com/docs/KeyList.htm) and using the above utility functions
+3- Edit the script (Notepad works) and create your shortcuts, setting your [keys](https://autohotkey.com/docs/KeyList.htm) and the address to your desired App by using the above utility functions
+
+For example, this line `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\SnippingTool.exe")`  will open the Window's SnippingTool when you press the *F7* key
 
 4- Execute the script (Double click on it)
 
