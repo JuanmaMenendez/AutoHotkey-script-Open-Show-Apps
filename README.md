@@ -1,7 +1,7 @@
 # AutoHotkey script to Open or Show Apps
 
 
-This [AutoHotkey](https://www.autohotkey.com/) script is to Open, Restore or Minimize (if it is already opened) the desired Window or Chrome Apps, using the shortcuts key (hotkeys) that you want to set.
+This [AutoHotkey](https://www.autohotkey.com/) script is to Open, Restore or Minimize (if it is already opened) the desired Window's or Chrome's Apps, using the shortcuts key (hotkeys) that you want to set.
 
 There are two **utility functions** for this purpose: 
 
