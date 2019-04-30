@@ -1,7 +1,8 @@
 # AutoHotkey script to Open or Show Apps
 
 
-This [AutoHotkey](https://www.autohotkey.com/) script is to Open, Restore or Minimize (if it is already opened) the desired Window's or Chrome's Apps, using the shortcuts key (hotkeys) that you want to set.
+This [AutoHotkey](https://www.autohotkey.com/) script is to Open, Restore or Minimize (if it is already opened) the desired Apps, using the shortcuts key (hotkeys) that you want to set.<br /> 
+It works well with regular Window Apps, Chrome Shortcuts and Chrome Apps.
 
 There are two **utility functions** for this purpose: 
 
@@ -33,3 +34,8 @@ For example, this line `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\Sn
 5- (Optional) In order to automatically load this script on System Start Up, create a Window desktop shortcut for it and move it into the Windows startup folder, located exactly at "*%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup*"
 
 6- Enjoy
+
+
+## Extras
+
+Additionally, pressing Alt + ` (key above Tab key) you can switch between open Windows of the same type.

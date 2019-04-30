@@ -6,6 +6,9 @@
 ; b) OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)  //Specially useful for Chrome Apps and Chrome Shortcuts 
 
 
+; Additionally, pressing Alt + ` (key above Tab key) you can switch between open Windows of the same type and same App (.exe)
+; The "type" checking is based on the App's Title convention that stipulates that the App name should be at the end of the Window title (Eg: New Document - Word )
+
 
 /* ;
 *****************************
@@ -56,7 +59,6 @@ OpenOrShowAppBasedOnExeName(AppAddress)
 }
 
 
-
 OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)
 {
 
@@ -95,6 +97,11 @@ OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)
 }
 
 
+ExtractAppTitle(FullTitle)
+{
+	AppTitle := SubStr(FullTitle, InStr(FullTitle, " ", false, -1) + 1)
+	Return AppTitle
+}
 
 
 /* ;
@@ -112,4 +119,28 @@ F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\SnippingTool.exe")
 F8:: OpenOrShowAppBasedOnWindowTitle("Gmail", "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/mail/")
 
 
+
+
+; Alt + ` -  Activate NEXT Window of same type (title checking) of the current APP
+!`::
+WinGet, ActiveProcess, ProcessName, A
+WinGet, OpenWindowsAmount, Count, ahk_exe %ActiveProcess%
+
+If OpenWindowsAmount = 1  ; If only one Window exist, do nothing
+    Return
+
+Else
+	{
+		WinGetTitle, FullTitle, A
+		AppTitle := ExtractAppTitle(FullTitle)
+
+		SetTitleMatchMode, 2
+		WinGet, WindowsWithSameTitleList, List, %AppTitle%
+
+		If WindowsWithSameTitleList > 1 ; If several Window of same type (title checking) exist
+		{
+			WinActivate, % "ahk_id " WindowsWithSameTitleList%WindowsWithSameTitleList%	; Activate next Window
+		}
+	}
+Return
     
