@@ -23,7 +23,7 @@ There are two **utility functions** for this purpose:
 
 1- Download and install the AutoHotkey App [here](https://autohotkey.com/download/ahk-install.exe)
 
-2- Download the script file [here](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/releases/latest/download/Open-Show-Apps.ahk)
+2- Download the script file [here](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/releases/latest/download/AutoHotkey-script-Open-Show-Apps.ahk)
 
 3- Edit the script (Notepad works) and create your shortcuts, setting your [keys](https://autohotkey.com/docs/KeyList.htm) and the address to your desired App by using the above utility functions
 
