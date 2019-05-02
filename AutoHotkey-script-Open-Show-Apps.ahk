@@ -4,11 +4,11 @@
 ;
 ; a) OpenOrShowAppBasedOnExeName(AppAddress) 
 ; b) OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)  //Specially useful for Chrome Apps and Chrome Shortcuts 
-
+; c) OpenOrShowAppBasedOnAppModelUserID(AppName, AppModelUserID) // Use this for Windows Store apps
 
 ; Additionally, pressing Alt + ` (key above Tab key) you can switch between open Windows of the same type and same App (.exe)
 ; The "type" checking is based on the App's Title convention that stipulates that the App name should be at the end of the Window title (Eg: New Document - Word )
-
+#WinActivateForce ; Needed for difficult apps
 
 /* ;
 *****************************
@@ -97,6 +97,44 @@ OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)
 }
 
 
+OpenOrShowAppBasedOnAppModelUserID(AppName, AppModelUserID)
+{
+
+	SetTitleMatchMode, 2
+
+    IfWinExist, %AppName%
+    {    
+
+		IfWinActive
+		{
+			WinMinimize
+			Return
+		}
+		else
+		{
+			Run, shell:AppsFolder\%AppModelUserID%, UseErrorLevel
+			If ErrorLevel
+			{
+				Msgbox, File %AppModelUserID% Not Found
+				Return
+			}
+		}
+		
+	}
+    else
+    {
+
+        Run, shell:AppsFolder\%AppModelUserID%, UseErrorLevel
+        If ErrorLevel
+        {
+            Msgbox, File %AppModelUserID% Not Found
+            Return
+        }
+		
+    }
+}
+
+
 ExtractAppTitle(FullTitle)
 {
 	AppTitle := SubStr(FullTitle, InStr(FullTitle, " ", false, -1) + 1)
@@ -112,13 +150,14 @@ ExtractAppTitle(FullTitle)
 
 
 ; F7 - Open||Show "SnippingTool"
-F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\SnippingTool.exe")			
+F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\SnippingTool.exe")
 
-	
+
 ; F8 - Open||Show  "Gmail as Chrome App"
 F8:: OpenOrShowAppBasedOnWindowTitle("Gmail", "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/mail/")
 
-
+; F9 - Open||Show "Windows store calculator app"
+F9:: OpenOrShowAppBasedOnAppModelUserID("Calculator", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App")
 
 
 ; Alt + ` -  Activate NEXT Window of same type (title checking) of the current APP
@@ -143,4 +182,4 @@ Else
 		}
 	}
 Return
-    
+
