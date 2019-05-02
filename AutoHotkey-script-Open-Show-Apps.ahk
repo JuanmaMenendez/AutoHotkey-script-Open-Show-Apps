@@ -103,7 +103,7 @@ OpenOrShowAppBasedOnAppModelUserID(AppName, AppModelUserID)
 	SetTitleMatchMode, 2
 
     IfWinExist, %AppName%
-    {
+    {    
 
 		IfWinActive
 		{
@@ -118,13 +118,8 @@ OpenOrShowAppBasedOnAppModelUserID(AppName, AppModelUserID)
 				Msgbox, File %AppModelUserID% Not Found
 				Return
 			}
-			else
-			{
-				WinActivate
-				Return
-			}
 		}
-
+		
 	}
     else
     {
@@ -135,12 +130,7 @@ OpenOrShowAppBasedOnAppModelUserID(AppName, AppModelUserID)
             Msgbox, File %AppModelUserID% Not Found
             Return
         }
-		else
-		{
-			WinActivate
-			Return
-		}
-
+		
     }
 }
 
