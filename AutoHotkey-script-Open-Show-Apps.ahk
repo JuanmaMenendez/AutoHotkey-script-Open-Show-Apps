@@ -4,7 +4,7 @@
 ;
 ; a) OpenOrShowAppBasedOnExeName(AppAddress) 
 ; b) OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)  //Specially useful for Chrome Apps and Chrome Shortcuts 
-; c) OpenOrShowAppBasedOnAppModelUserID(WindowTitleWord, AppModelUserID) // Use with windows store Apps (contained in the "shell:AppsFolder\")
+
 
 ; Additionally, pressing Alt + ` (key above Tab key) you can switch between open Windows of the same type and same App (.exe)
 ; The "type" checking is based on the App's Title convention that stipulates that the App name should be at the end of the Window title (Eg: New Document - Word )
@@ -22,7 +22,7 @@ OpenOrShowAppBasedOnExeName(AppAddress)
 
 
 	AppExeName := SubStr(AppAddress, InStr(AppAddress, "\", false, -1) + 1)
-
+		
 
 	IfWinExist ahk_exe %AppExeName%
 	{
@@ -37,10 +37,10 @@ OpenOrShowAppBasedOnExeName(AppAddress)
 			WinActivate
 			Return
 		}
-
+				
 	}
 	else
-	{
+	{	
 	
 		Run, %AppAddress%, UseErrorLevel
         If ErrorLevel
@@ -51,9 +51,9 @@ OpenOrShowAppBasedOnExeName(AppAddress)
 		else
 		{
 			WinWait, ahk_exe %AppExeName%
-			WinActivate ahk_exe %AppExeName%
+			WinActivate ahk_exe %AppExeName%			
 			Return
-		}
+		}			
 		
 	}
 }
@@ -66,7 +66,7 @@ OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)
 	
 
     IfWinExist, %WindowTitleWord%
-    {
+    {    
 
 		IfWinActive
 		{
