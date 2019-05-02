@@ -4,11 +4,11 @@
 ;
 ; a) OpenOrShowAppBasedOnExeName(AppAddress) 
 ; b) OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)  //Specially useful for Chrome Apps and Chrome Shortcuts 
-
+; c) OpenOrShowAppBasedOnAppModelUserID(AppName, AppModelUserID) // Use this for Windows Store apps
 
 ; Additionally, pressing Alt + ` (key above Tab key) you can switch between open Windows of the same type and same App (.exe)
 ; The "type" checking is based on the App's Title convention that stipulates that the App name should be at the end of the Window title (Eg: New Document - Word )
-
+#WinActivateForce ; Needed for difficult apps
 
 /* ;
 *****************************
