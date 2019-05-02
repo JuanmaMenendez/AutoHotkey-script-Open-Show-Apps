@@ -4,19 +4,20 @@
 This [AutoHotkey](https://www.autohotkey.com/) script is to Open, Restore or Minimize (if it is already opened) the desired Apps, using the shortcuts key (hotkeys) that you want to set.<br /> 
 It works well with regular Window Apps, Chrome Shortcuts and Chrome Apps.
 
-There are two **utility functions** for this purpose: 
+There are two **utility functions** for this purpose:
 
 **a)** `OpenOrShowAppBasedOnExeName(AppAddress)` //Useful for regular Window Apps
 
 **b)** `OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)`  //Specially useful for Chrome Apps and Chrome Shortcuts
 
+**c)** `OpenOrShowAppBasedOnAppModelUserID(WindowTitleWord, AppModelUserID)` // Use with windows store Apps (contained in the "shell:AppsFolder\").
 
 ## Configuration Examples
 
 `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\SnippingTool.exe")`
 
 `F8:: OpenOrShowAppBasedOnWindowTitle("Gmail", "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/mail/")`
-
+`F9:: OpenOrShowAppBasedOnAppModelUserID("Calculator", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App")`
 
 
 ## Installation Steps
@@ -39,3 +40,12 @@ For example, this line `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\Sn
 ## Extras
 
 Additionally, pressing Alt + ` (key above Tab key) you can switch between open Windows of the same type.
+
+
+## Find AppModelUserID
+
+To get the AppUserModelID from the windows Calculator use the following command in the cmd prompt.
+
+`reg query HKEY_CURRENT_USER\Software\Classes\ /s /f AppUserModelID | find "REG_SZ" | findstr -i Calc`
+
+A comprehensive guide on how to find the AppModelUserID of a windows store app can be found [here](https://jcutrer.com/windows/find-aumid).
