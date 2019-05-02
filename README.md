@@ -17,6 +17,7 @@ There are two **utility functions** for this purpose:
 `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\SnippingTool.exe")`
 
 `F8:: OpenOrShowAppBasedOnWindowTitle("Gmail", "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/mail/")`
+
 `F9:: OpenOrShowAppBasedOnAppModelUserID("Calculator", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App")`
 
 
