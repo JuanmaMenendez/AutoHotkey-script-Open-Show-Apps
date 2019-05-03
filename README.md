@@ -1,16 +1,17 @@
 # AutoHotkey script to Open or Show Apps
 
 
-This [AutoHotkey](https://www.autohotkey.com/) script is to Open, Restore or Minimize (if it is already opened) the desired Apps, using the shortcuts key (hotkeys) that you want to set.<br /> 
-It works well with regular Window Apps, Chrome Shortcuts and Chrome Apps.
+This [AutoHotkey](https://www.autohotkey.com/) script is to Open, Restore or Minimize the desired Apps, using the shortcuts key (hotkeys) that you want to set.<br /> 
+It works well with regular Window Apps, Windows Store Apps, Chrome Shortcuts and Chrome Apps.
 
-There are two **utility functions** for this purpose:
+There are three **utility functions** for this purpose:
 
-**a)** `OpenOrShowAppBasedOnExeName(AppAddress)` //Useful for regular Window Apps
+**a)** `OpenOrShowAppBasedOnExeName(AppAddress)` - Useful for regular Window Apps
 
-**b)** `OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)`  //Specially useful for Chrome Apps and Chrome Shortcuts
+**b)** `OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)` - Specially useful for Chrome Apps and Chrome Shortcuts 
 
-**c)** `OpenOrShowAppBasedOnAppModelUserID(WindowTitleWord, AppModelUserID)` // Use with windows store Apps (contained in the "shell:AppsFolder\").
+**c)** `OpenOrShowAppBasedOnAppModelUserID(AppTitle, AppModelUserID)` - Useful for Windows Store Apps (contained in the "shell:AppsFolder\")
+  
 
 ## Configuration Examples
 
@@ -23,7 +24,7 @@ There are two **utility functions** for this purpose:
 
 ## Installation Steps
 
-1- Download and install the AutoHotkey App [here](https://autohotkey.com/download/ahk-install.exe)
+1- Download and install the AutoHotkey App [here](https://www.autohotkey.com/)
 
 2- Download the script file [here](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/releases/latest/download/AutoHotkey-script-Open-Show-Apps.ahk)
 
@@ -40,13 +41,11 @@ For example, this line `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\Sn
 
 ## Extras
 
-Additionally, pressing Alt + ` (key above Tab key) you can switch between open Windows of the same type.
+### Switch between open windows of the same App / Type
+
+Pressing **Alt + `** (key above Tab key) you wil be able to switch between open windows of the same App / Type (Eg: between multiple Chrome windows)
 
 
-## Find AppModelUserID
+### Find AppModelUserID
 
-To get the AppUserModelID from the windows Calculator use the following command in the cmd prompt.
-
-`reg query HKEY_CURRENT_USER\Software\Classes\ /s /f AppUserModelID | find "REG_SZ" | findstr -i Calc`
-
-A comprehensive guide on how to find the AppModelUserID of a windows store app can be found [here](https://jcutrer.com/windows/find-aumid).
+To get the AppUserModelID of a Windows Store App, you can use these [comprehensive guide](https://jcutrer.com/windows/find-aumid).
