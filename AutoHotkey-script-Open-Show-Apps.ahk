@@ -1,16 +1,18 @@
 
-; This AutoHotkey script is to Open or Show (if it is already opened) the desires Apps using the configured shortcuts key (hotkeys)
-; There are two functions for this: 
+; This AutoHotkey script is to Open, Restore or Minimize the desires Apps using the configured shortcuts key (hotkeys) you want.
+; There are three functions you can use for this: 
 ;
-; a) OpenOrShowAppBasedOnExeName(AppAddress) 
-; b) OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)  //Specially useful for Chrome Apps and Chrome Shortcuts 
-; c) OpenOrShowAppBasedOnAppModelUserID(AppName, AppModelUserID) // Use this for Windows Store apps
+;
+; a) OpenOrShowAppBasedOnExeName(AppAddress) //Useful for regular Window Apps
 
-; Additionally, pressing Alt + ` (key above Tab key) you can switch between open Windows of the same type and same App (.exe)
+; b) OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)  //Specially useful for Chrome Apps and Chrome Shortcuts 
+
+; c) OpenOrShowAppBasedOnAppModelUserID(AppTitle, AppModelUserID) //Useful for Windows Store apps
+
+
+; Additionally, pressing Alt + ` (key above Tab key) you can switch between open Windows of the same "type" and same App (.exe)
 ; The "type" checking is based on the App's Title convention that stipulates that the App name should be at the end of the Window title (Eg: New Document - Word )
 
-
-#WinActivateForce ; Needed for difficult apps
 
 
 /* ;
@@ -19,6 +21,12 @@
 *****************************
 */
 
+
+#WinActivateForce ; Prevent task bar buttons from flashing when different windows are activated quickly one after the other.
+
+
+
+; AppAddress: The address to the .exe (Eg: "C:\Windows\System32\SnippingTool.exe")
 
 OpenOrShowAppBasedOnExeName(AppAddress)
 {
@@ -62,6 +70,9 @@ OpenOrShowAppBasedOnExeName(AppAddress)
 }
 
 
+; WindowTitleWord: Usually the word at the end of the app window title (Eg: in: "New Document - Word" will be "Word")
+; AppAddress: The address to the .exe (Eg: "C:\Windows\System32\SnippingTool.exe")
+
 OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)
 {
 
@@ -100,12 +111,16 @@ OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)
 }
 
 
-OpenOrShowAppBasedOnAppModelUserID(AppName, AppModelUserID)
+
+; AppTitle: Usually the word at the end of the app window title(Eg: in: "New Document - Word" will be "Word")
+; AppModelUserID: A comprehensive guide on how to find the AppModelUserID of a windows store app can be found here: https://jcutrer.com/windows/find-aumid
+
+OpenOrShowAppBasedOnAppModelUserID(AppTitle, AppModelUserID)
 {
 
 	SetTitleMatchMode, 2
 
-    IfWinExist, %AppName%
+    IfWinExist, %AppTitle%
     {    
 
 		IfWinActive
@@ -115,7 +130,7 @@ OpenOrShowAppBasedOnAppModelUserID(AppName, AppModelUserID)
 		}
 		else
 		{
-			WinActivateBottom %AppName%
+			WinActivateBottom %AppTitle%
 		}
 		
 	}
@@ -155,6 +170,8 @@ F8:: OpenOrShowAppBasedOnWindowTitle("Gmail", "C:\Program Files (x86)\Google\Chr
 
 ; F9 - Open||Show "Windows store calculator app"
 F9:: OpenOrShowAppBasedOnAppModelUserID("Calculator", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App")
+
+
 
 
 ; Alt + ` -  Activate NEXT Window of same type (title checking) of the current APP
