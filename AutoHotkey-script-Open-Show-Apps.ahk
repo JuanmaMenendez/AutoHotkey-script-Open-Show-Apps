@@ -8,7 +8,10 @@
 
 ; Additionally, pressing Alt + ` (key above Tab key) you can switch between open Windows of the same type and same App (.exe)
 ; The "type" checking is based on the App's Title convention that stipulates that the App name should be at the end of the Window title (Eg: New Document - Word )
+
+
 #WinActivateForce ; Needed for difficult apps
+
 
 /* ;
 *****************************
@@ -112,12 +115,7 @@ OpenOrShowAppBasedOnAppModelUserID(AppName, AppModelUserID)
 		}
 		else
 		{
-			Run, shell:AppsFolder\%AppModelUserID%, UseErrorLevel
-			If ErrorLevel
-			{
-				Msgbox, File %AppModelUserID% Not Found
-				Return
-			}
+			WinActivateBottom %AppName%
 		}
 		
 	}
@@ -151,7 +149,6 @@ ExtractAppTitle(FullTitle)
 
 ; F7 - Open||Show "SnippingTool"
 F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\SnippingTool.exe")
-
 
 ; F8 - Open||Show  "Gmail as Chrome App"
 F8:: OpenOrShowAppBasedOnWindowTitle("Gmail", "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/mail/")
