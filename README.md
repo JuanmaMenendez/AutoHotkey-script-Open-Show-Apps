@@ -48,4 +48,4 @@ Pressing **Alt + `** (key above Tab key) you wil be able to switch between open 
 
 ### Find AppModelUserID
 
-To get the AppUserModelID of a Windows Store App, you can use these [comprehensive guide](https://jcutrer.com/windows/find-aumid).
+To get the AppUserModelID of a Windows Store App, you can use this [comprehensive guide](https://jcutrer.com/windows/find-aumid).
