@@ -165,10 +165,10 @@ ExtractAppTitle(FullTitle)
 ; F7 - Open||Show "SnippingTool"
 F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\SnippingTool.exe")
 
-; F8 - Open||Show  "Gmail as Chrome App"
+; F8 - Open||Show "Gmail as Chrome App"
 F8:: OpenOrShowAppBasedOnWindowTitle("Gmail", "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/mail/")
 
-; F9 - Open||Show "Windows store calculator app"
+; F9 - Open||Show "Windows store Calculator app"
 F9:: OpenOrShowAppBasedOnAppModelUserID("Calculator", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App")
 
 
