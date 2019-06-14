@@ -5,7 +5,7 @@
 
 ## Features
 
-**1)** Support *Windows regular Apps*, *Windows Store Apps*, *Chrome Apps* and [*Chrome Shortcuts*](https://www.laptopmag.com/articles/how-to-create-desktop-shortcuts-for-web-pages-using-chrome) (useful to directly open any web page)
+**1)** Support *Windows regular Apps*, *Windows Store Apps*, *Chrome Apps* and [*Chrome Website Shortcuts*](https://www.laptopmag.com/articles/how-to-create-desktop-shortcuts-for-web-pages-using-chrome) (useful to directly open any web page)
 
 **2)** Switch between open windows of the same App pressing **Alt + `** (key above Tab key) like in Mac OS. You can switch for example between multiple Chrome open windows 
 
@@ -13,15 +13,15 @@
 ## Utility Functions
 
 
-**a)** `OpenOrShowAppBasedOnExeName(AppAddress)` - Useful for regular Window Apps
+**a)** `OpenOrShowAppBasedOnExeName(AppAddress)` - Useful for **regular Window Apps**
 
 Example: `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\SnippingTool.exe")`
 
-**b)** `OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)` - Specially useful for Chrome Apps and Chrome Shortcuts 
+**b)** `OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)` - Specially useful for **Chrome Apps** and [**Chrome Website Shortcuts**](https://www.laptopmag.com/articles/how-to-create-desktop-shortcuts-for-web-pages-using-chrome) 
 
 Example: `F8:: OpenOrShowAppBasedOnWindowTitle("Gmail", "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/mail/")`
 
-**c)** `OpenOrShowAppBasedOnAppModelUserID(AppTitle, AppModelUserID)` - Useful for Windows Store Apps (contained in the "shell:AppsFolder\")
+**c)** `OpenOrShowAppBasedOnAppModelUserID(AppTitle, AppModelUserID)` - Useful for **Windows Store Apps** (contained in the "shell:AppsFolder\")
 
 Example: `F9:: OpenOrShowAppBasedOnAppModelUserID("Calculator", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App")`
  
