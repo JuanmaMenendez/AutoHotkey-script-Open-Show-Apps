@@ -38,7 +38,7 @@ Example: `F9:: OpenOrShowAppBasedOnAppModelUserID("Calculator", "Microsoft.Windo
 
 2- Download the script file [here](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/releases/latest/download/AutoHotkey-script-Open-Show-Apps.ahk)
 
-3- Edit the "SHORTCUTS CONFIGURATION" section in the script file (Notepad works) and create your shortcuts, setting your [keys](https://autohotkey.com/docs/KeyList.htm) and the address to your desired App by using the above utility functions
+3- Edit the "SHORTCUTS CONFIGURATION" section in the script file (Notepad works) and create your shortcuts, setting your [keys](https://autohotkey.com/docs/KeyList.htm) and the address to your desired App by using the above [utility functions](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps#utility-functions)
 
 For example, this line `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\SnippingTool.exe")`  will open the Window's SnippingTool when you press the *F7* key
 
