@@ -5,7 +5,7 @@
 
 ## Features
 
-**1)** Support *Windows regular Apps*, *Windows Store Apps*, *Chrome Apps* and *Chrome Shortcuts* (useful to directly open any web page)
+**1)** Support *Windows regular Apps*, *Windows Store Apps*, *Chrome Apps* and [*Chrome Shortcuts*](https://www.laptopmag.com/articles/how-to-create-desktop-shortcuts-for-web-pages-using-chrome) (useful to directly open any web page)
 
 **2)** Switch between open windows of the same App pressing **Alt + `** (key above Tab key) like in Mac OS. You can switch for example between multiple Chrome open windows 
 
