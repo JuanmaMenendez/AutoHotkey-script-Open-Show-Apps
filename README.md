@@ -1,7 +1,23 @@
-# AutoHotkey script to Open or Show Apps
+<h1 align="center">
+   <img src="https://raw.githubusercontent.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/logo.png" alt="AutoHotkey-script-Open-Show-Apps" width="650px">    
+</h1>
 
+<h4 align="center"><a href="https://www.autohotkey.com/" target="_blank">AutoHotkey</a> script to Open, Restore or Minimize any Apps, using the hotkeys you want</h4>
+<br /> 
 
-[AutoHotkey](https://www.autohotkey.com/) script to Open, Restore or Minimize any Apps, using the hotkeys you want.<br /> 
+<div align="center">
+<a href="https://autohotkey.com"> 
+    <img src="https://img.shields.io/badge/AutoHotkey-1.1-blue.svg" alt="AutoHotkey">
+</a>
+<a href="https://GitHub.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/graphs/commit-activity"> 
+    <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance">
+</a>
+<img src="https://img.shields.io/badge/contributions-welcome-orange.svg" alt="Contributions welcome">
+<a href="https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/blob/master/LICENSE">
+<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
+</a>
+</div>
+
 
 ## Features
 
@@ -17,13 +33,13 @@
 
 Example: `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\SnippingTool.exe")`
 
----
+<br>
 
 **b)** `OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)` - Specially useful for **Chrome Apps** and [**Chrome Website Shortcuts**](https://www.laptopmag.com/articles/how-to-create-desktop-shortcuts-for-web-pages-using-chrome) 
 
 Example: `F8:: OpenOrShowAppBasedOnWindowTitle("Gmail", "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/mail/")`
 
----
+<br>
 
 
 **c)** `OpenOrShowAppBasedOnAppModelUserID(AppTitle, AppModelUserID)` - Useful for **Windows Store Apps** (contained in the "shell:AppsFolder\")
