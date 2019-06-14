@@ -6,14 +6,14 @@
 <br /> 
 
 <div align="center">
-<a href="https://autohotkey.com"> 
+<a href="https://autohotkey.com" target="_blank"> 
     <img src="https://img.shields.io/badge/AutoHotkey-1.1-blue.svg" alt="AutoHotkey">
 </a>
-<a href="https://GitHub.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/graphs/commit-activity"> 
+<a href="https://GitHub.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/graphs/commit-activity" target="_blank"> 
     <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance">
 </a>
 <img src="https://img.shields.io/badge/contributions-welcome-orange.svg" alt="Contributions welcome">
-<a href="https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/blob/master/LICENSE">
+<a href="https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/blob/master/LICENSE" target="_blank">
 <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
 </a>
 </div>
