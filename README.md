@@ -17,15 +17,19 @@
 
 Example: `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\SnippingTool.exe")`
 
+---
+
 **b)** `OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)` - Specially useful for **Chrome Apps** and [**Chrome Website Shortcuts**](https://www.laptopmag.com/articles/how-to-create-desktop-shortcuts-for-web-pages-using-chrome) 
 
 Example: `F8:: OpenOrShowAppBasedOnWindowTitle("Gmail", "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/mail/")`
+
+---
+
 
 **c)** `OpenOrShowAppBasedOnAppModelUserID(AppTitle, AppModelUserID)` - Useful for **Windows Store Apps** (contained in the "shell:AppsFolder\")
 
 Example: `F9:: OpenOrShowAppBasedOnAppModelUserID("Calculator", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App")`
  
-
 
 
 ## Installation
