@@ -1,5 +1,5 @@
 <h1 align="center">
-   <img src="https://raw.githubusercontent.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/logo.png" alt="AutoHotkey-script-Open-Show-Apps" width="650px">    
+   <img src="https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/raw/master/logo.png" alt="AutoHotkey-script-Open-Show-Apps" width="650px">    
 </h1>
 
 <h4 align="center"><a href="https://www.autohotkey.com/" target="_blank">AutoHotkey</a> script to Open, Restore or Minimize any Apps, using the hotkeys you want</h4>
@@ -25,6 +25,7 @@
 
 **2)** Switch between open windows of the same App pressing **Alt + `** (key above Tab key) like in Mac OS. You can switch for example between multiple Chrome open windows 
 
+<br /> 
 
 ## Utility Functions
 
@@ -46,7 +47,7 @@ Example: `F8:: OpenOrShowAppBasedOnWindowTitle("Gmail", "C:\Program Files (x86)\
 
 Example: `F9:: OpenOrShowAppBasedOnAppModelUserID("Calculator", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App")`
  
-
+<br /> 
 
 ## Installation
 
@@ -64,6 +65,7 @@ For example, this line `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\System32\Sn
 
 6- Enjoy
 
+<br /> 
 
 ## Extras
 
