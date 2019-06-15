@@ -7,18 +7,17 @@
 
 <div align="center">
 
-<a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/de59e8e9b410aa0b9479b114040c06468ef33cfc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2d76332e362b2d626c75652e737667"><img src="https://camo.githubusercontent.com/de59e8e9b410aa0b9479b114040c06468ef33cfc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2d76332e362b2d626c75652e737667" alt="Python" data-canonical-src="https://img.shields.io/badge/python-v3.6+-blue.svg" style="max-width:100%;"></a>
-
-<a target="_blank" href="https://autohotkey.com"> 
+<a style="display: inline-block;" href="https://autohotkey.com"> 
     <img src="https://img.shields.io/badge/AutoHotkey-1.1-blue.svg" alt="AutoHotkey">
 </a>
-<a href="https://GitHub.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/graphs/commit-activity" target="_blank"> 
+<a style="display: inline-block;" href="https://GitHub.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/graphs/commit-activity" target="_blank"> 
     <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance">
 </a>
 <img src="https://img.shields.io/badge/contributions-welcome-orange.svg" alt="Contributions welcome">
-<a href="https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/blob/master/LICENSE" target="_blank">
+<a style="display: inline-block;" href="https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/blob/master/LICENSE" target="_blank">
 <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
 </a>
+
 </div>
 
 
