@@ -6,26 +6,21 @@
 <br /> 
 
 
-<p align="center">
+
+<div align="center">
     <a href="https://autohotkey.com">
         <img src="https://img.shields.io/badge/AutoHotkey-1.1-blue.svg" alt="AutoHotkey 1.1" /></a>
     <a href="#backers" alt="Backers on Open Collective">
         <img src="https://img.shields.io/opencollective/backers/shields.svg" /></a>
     <a href="#sponsors" alt="Sponsors on Open Collective">
-        <img src="https://img.shields.io/opencollective/sponsors/shields.svg" /></a> 
-</p>
-
-<div align="center">
-
-<a style="display: inline-block;" href="https://GitHub.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/graphs/commit-activity" target="_blank"> 
-    <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance">
-</a>
-<img src="https://img.shields.io/badge/contributions-welcome-orange.svg" alt="Contributions welcome">
-<a style="display: inline-block;" href="https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/blob/master/LICENSE" target="_blank">
-<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
-</a>
-
+        <img src="https://img.shields.io/opencollective/sponsors/shields.svg" /></a>
+    <a href="https://GitHub.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/graphs/commit-activity"> 
+        <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance"></a>
+    <img src="https://img.shields.io/badge/contributions-welcome-orange.svg" alt="Contributions welcome">
+    <a href="https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/blob/master/LICENSE">
+        <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 </div>
+
 
 
 ## Features
