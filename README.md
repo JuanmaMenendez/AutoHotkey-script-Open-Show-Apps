@@ -2,11 +2,14 @@
    <img src="https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/raw/master/logo.png" alt="AutoHotkey-script-Open-Show-Apps" width="650px">    
 </h1>
 
-<h4 align="center"><a href="https://www.autohotkey.com/" target="_blank">AutoHotkey</a> script to Open, Restore or Minimize any Apps, using the hotkeys you want</h4>
+<h3 align="center"><a href="https://www.autohotkey.com/" target="_blank">AutoHotkey</a> script to Open, Restore or Minimize any Apps, using the hotkeys you want</h3>
 <br /> 
 
 <div align="center">
-<a href="https://autohotkey.com" target="_blank"> 
+
+<a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/de59e8e9b410aa0b9479b114040c06468ef33cfc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2d76332e362b2d626c75652e737667"><img src="https://camo.githubusercontent.com/de59e8e9b410aa0b9479b114040c06468ef33cfc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2d76332e362b2d626c75652e737667" alt="Python" data-canonical-src="https://img.shields.io/badge/python-v3.6+-blue.svg" style="max-width:100%;"></a>
+
+<a target="_blank" href="https://autohotkey.com"> 
     <img src="https://img.shields.io/badge/AutoHotkey-1.1-blue.svg" alt="AutoHotkey">
 </a>
 <a href="https://GitHub.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/graphs/commit-activity" target="_blank"> 
@@ -21,9 +24,9 @@
 
 ## Features
 
-**1)** Support *Windows regular Apps*, *Windows Store Apps*, *Chrome Apps* and [*Chrome Website Shortcuts*](https://www.laptopmag.com/articles/how-to-create-desktop-shortcuts-for-web-pages-using-chrome) (useful to directly open any web page)
+**1)** Support for *Windows regular Apps*, *Windows Store Apps*, *Chrome Apps* and [*Chrome Website Shortcuts*](https://www.laptopmag.com/articles/how-to-create-desktop-shortcuts-for-web-pages-using-chrome) (useful to directly open any web page)
 
-**2)** Switch between open windows of the same App pressing **Alt + `** (key above Tab key) like in Mac OS. You can switch for example between multiple Chrome open windows 
+**2)** Ability to switch between open windows of the same App pressing **Alt + `** (key above Tab key) like in Mac OS. You can switch for example between multiple Chrome open windows 
 
 <br /> 
 
