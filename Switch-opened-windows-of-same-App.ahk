@@ -1,4 +1,5 @@
 
+; NOTE: This functionality is already included in "Open-Apps-and-Switch-opened-windows.ahk" script
 ; This AutoHotkey script allows switching between open Windows of the current active App or Chrome Website Shortcut
 ; For regular Windows Apps it checks the app Process and Class
 ; For Chrome Apps and Chrome Website Shortcuts it checks the window's title (Eg: New Document - Word )
