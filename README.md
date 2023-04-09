@@ -59,7 +59,7 @@ Note: To get the AppUserModelID of a Windows Store App, you can use this [compre
 1- Download and install the AutoHotkey App v1.1 [here](https://www.autohotkey.com/) <br />
 Note: v1.1 still working fine. Pull Request to refactor the scripts for v2 compatibility are welcome
 
-2- Download the script file [here](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/releases/latest/download/AutoHotkey-script-Open-Show-Apps.ahk)
+2- Download the script file [here](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/releases/latest/download/Open-Apps-and-Switch-opened-windows.ahk)
 
 3- Edit the _"*** YOUR SHORTCUTS CONFIGURATION ***"_ section in the script file (Notepad works) and create/modify your shortcuts, setting your [hotkeys](https://autohotkey.com/docs/KeyList.htm) and the path to your desired App by using the above [utility functions](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps#how-it-works)
 
