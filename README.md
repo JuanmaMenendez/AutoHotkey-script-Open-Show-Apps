@@ -57,7 +57,7 @@ Note: To get the AppUserModelID of a Windows Store App, you can use this [compre
 ## Installation and Usage
 
 1- Download and install the AutoHotkey App v1.1 [here](https://www.autohotkey.com/) <br />
-Note: v1.1 still working fine. Pull Request to refactor the scripts for v2 compatibility are welcome
+Note: v1.1 is still working fine. Pull Requests to refactor the scripts for v2 compatibility are welcome.
 
 2- Download the script file [here](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/releases/latest/download/Open-Apps-and-Switch-opened-windows.ahk)
 
@@ -67,7 +67,7 @@ For example, this line `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\notepad.exe
 
 4- Execute the script (Double click on it)
 
-5- (Optional) In order to automatically load this script on System Start-Up, you have to create a Windows desktop shortcut for it and move it into the Windows startup folder, located exactly at "*%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup*"
+5- (Optional) To automatically load this script on System Startup, you have to create a Windows desktop shortcut for it and move it into the Windows startup folder, located precisely at "*%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup*"
 
 6- Enjoy
 
