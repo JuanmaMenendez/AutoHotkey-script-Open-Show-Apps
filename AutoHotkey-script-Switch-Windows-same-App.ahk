@@ -26,25 +26,24 @@ ExtractAppTitle(FullTitle)
 */
 
 
-; Alt + ` -  Activate NEXT Window of same type (title checking) of the current APP
+; Alt + ` -  Activate NEXT Window of same type (same process, same class) of the current APP
 !`::
 WinGet, ActiveProcess, ProcessName, A
-WinGet, OpenWindowsAmount, Count, ahk_exe %ActiveProcess%
+WinGetClass, ActiveClass, A
+WinGet, OpenWindowsAmount, Count, ahk_exe %ActiveProcess% ahk_class %ActiveClass%
 
 If OpenWindowsAmount = 1  ; If only one Window exist, do nothing
     Return
-	
 Else
 	{
 		WinGetTitle, FullTitle, A
-		AppTitle := ExtractAppTitle(FullTitle)
 
 		SetTitleMatchMode, 2		
-		WinGet, WindowsWithSameTitleList, List, %AppTitle%
+		WinGet, WindowsListWithSameProcessAndClass, List, ahk_exe %ActiveProcess% ahk_class %ActiveClass%
 		
-		If WindowsWithSameTitleList > 1 ; If several Window of same type (title checking) exist
+		If WindowsListWithSameProcessAndClass > 1 ; If several Window of same type (same process, same class) exist
 		{
-			WinActivate, % "ahk_id " WindowsWithSameTitleList%WindowsWithSameTitleList%	; Activate next Window	
+			WinActivate, % "ahk_id " WindowsListWithSameProcessAndClass%WindowsListWithSameProcessAndClass%	; Activate next Window	
 		}
 	}
 Return
