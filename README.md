@@ -25,7 +25,12 @@
 <br /> 
 
 
-## Utility Functions
+## How it works
+
+You set a hotkey and a corresponding utility function responsible to execute the action.
+
+There are three utility functions you can use for this:
+
 
 **a)** `OpenOrShowAppBasedOnExeName(AppAddress)` - Useful for **regular Window Apps**
 
@@ -56,7 +61,7 @@ Note: v1.1 still working fine. Pull Request to refactor the scripts for v2 compa
 
 2- Download the script file [here](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps/releases/latest/download/AutoHotkey-script-Open-Show-Apps.ahk)
 
-3- Edit the "YOUR SHORTCUTS CONFIGURATION" section in the script file (Notepad works) and create your shortcuts, setting your [hotkeys](https://autohotkey.com/docs/KeyList.htm) and the address to your desired App by using the above [utility functions](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps#utility-functions)
+3- Edit the _"*** YOUR SHORTCUTS CONFIGURATION ***"_ section in the script file (Notepad works) and create your shortcuts, setting your [hotkeys](https://autohotkey.com/docs/KeyList.htm) and the address to your desired App by using the above [utility functions](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps#utility-functions)
 
 For example, this line `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\notepad.exe")`  will open the Window's Notepad App when you press the *F7* key
 
