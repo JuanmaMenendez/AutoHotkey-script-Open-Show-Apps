@@ -34,21 +34,27 @@ You set a hotkey and a corresponding utility function responsible to execute the
 
 OpenOrShowAppBasedOnExeName(AppAddress)
 {
+	SysGet, VirtualWidth, 78
+	SysGet, VirtualHeight, 79
+    if InStr(AppExeName,".lnk")
+    {
+		FileGetShortcut,%AppAddress%,AppAddress
+	
+	}
 	AppExeName := SubStr(AppAddress, InStr(AppAddress, "\", false, -1) + 1)
-
+  	if (activeProcessName = AppExeName) {
+       		HandleWindowsWithSameProcessAndClass(activeProcessName)
+   	}
 	IfWinExist ahk_exe %AppExeName%
-	{
-		IfWinActive
-		{
-			WinMinimize
-			Return
-		}
-		else
 		{
 			WinActivate
+            ; Check if the window is off the desktop and move it back to the desktop if necessary
+            WinGetPos, x, y, width, height, ahk_exe %AppExeName%
+            if (x < 0 || y < 0 || x > VirtualWidth || y > VirtualHeight) {
+                WinMove, ahk_exe %AppExeName%, , A_ScreenWidth/3, A_ScreenHeight/3, A_ScreenWidth/2, A_ScreenHeight/2,
+            }
 			Return
 		}
-	}
 	else
 	{
 		Run, %AppAddress%, UseErrorLevel
@@ -61,7 +67,13 @@ OpenOrShowAppBasedOnExeName(AppAddress)
 		{
 			WinWait, ahk_exe %AppExeName%
 			WinActivate ahk_exe %AppExeName%
-			Return
+
+                ; Check if the window is off the desktop and move it back to the desktop if necessary
+                WinGetPos, x, y, width, height, ahk_exe %AppExeName%
+                if (x < 0 || y < 0 || x > VirtualWidth || y > VirtualHeight) {
+                    WinMove, ahk_exe %AppExeName%, , A_ScreenWidth/3, A_ScreenHeight/3, A_ScreenWidth/2, A_ScreenHeight/2,
+                }
+                return
 		}
 	}
 }
@@ -72,6 +84,8 @@ OpenOrShowAppBasedOnExeName(AppAddress)
 
 OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)
 {
+	SysGet, VirtualWidth, 78
+	SysGet, VirtualHeight, 79
 	SetTitleMatchMode, 2
 
     IfWinExist, %WindowTitleWord%
@@ -79,11 +93,19 @@ OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)
 		IfWinActive
 		{
 			WinMinimize
+			WinGetPos, x, y, width, height, %WindowTitleWord%
+			if (x < 0 || y < 0 || x > VirtualWidth || y > VirtualHeight) {
+				WinMove, %WindowTitleWord%, ,  A_ScreenWidth/3, A_ScreenHeight/3, A_ScreenWidth/2, A_ScreenHeight/2,
+			}
 			Return
 		}
 		else
 		{
 			WinActivate
+			WinGetPos, x, y, width, height, %WindowTitleWord%
+			if (x < 0 || y < 0 || x > VirtualWidth || y > VirtualHeight) {
+				WinMove, %WindowTitleWord%, ,  A_ScreenWidth/3, A_ScreenHeight/3, A_ScreenWidth/2, A_ScreenHeight/2,
+			}
 			Return
 		}
 	}
@@ -98,6 +120,10 @@ OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)
 		else
 		{
 			WinActivate
+			WinGetPos, x, y, width, height, %WindowTitleWord%
+			if (x < 0 || y < 0 || x > VirtualWidth || y > VirtualHeight) {
+				WinMove, %WindowTitleWord%, ,  A_ScreenWidth/3, A_ScreenHeight/3, A_ScreenWidth/2, A_ScreenHeight/2,
+			}
 			Return
 		}
     }
