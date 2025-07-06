@@ -27,18 +27,18 @@
 
 ## How it works
 
-You set a hotkey and a corresponding utility function responsible to execute the action.
+You set a hotkey and a corresponding utility function responsible for executing the action.
 
 There are three utility functions you can use for this:
 
 
-**a)** `OpenOrShowAppBasedOnExeName(AppAddress)` - Useful for **regular Window Apps**
+**a)** `OpenOrShowAppBasedOnExeName(AppAddress)` - Useful for **regular Windows Apps**
 
 Example: `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\notepad.exe")`
 
 <br>
 
-**b)** `OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)` - Specially useful for **Chrome Apps** and [**Chrome Website Shortcuts**](https://www.laptopmag.com/articles/how-to-create-desktop-shortcuts-for-web-pages-using-chrome) 
+**b)** `OpenOrShowAppBasedOnWindowTitle(WindowTitleWord, AppAddress)` - Especially useful for **Chrome Apps** and [**Chrome Website Shortcuts**](https://www.laptopmag.com/articles/how-to-create-desktop-shortcuts-for-web-pages-using-chrome) 
 
 Example: `F8:: OpenOrShowAppBasedOnWindowTitle("Gmail", "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/mail/")`
 
@@ -63,7 +63,7 @@ Note: v1.1 is still working fine. Pull Requests to refactor the scripts for v2 c
 
 3- Edit the _"*** YOUR SHORTCUTS CONFIGURATION ***"_ section in the script file (Notepad works) and create/modify your shortcuts, setting your [hotkeys](https://autohotkey.com/docs/KeyList.htm) and the path to your desired App by using the above [utility functions](https://github.com/JuanmaMenendez/AutoHotkey-script-Open-Show-Apps#how-it-works)
 
-For example, this line `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\notepad.exe")`  will open the Window's Notepad App when you press the *F7* key
+For example, this line `F7:: OpenOrShowAppBasedOnExeName("C:\Windows\notepad.exe")`  will open the Windows Notepad App when you press the *F7* key
 
 4- Execute the script (Double click on it)
 
